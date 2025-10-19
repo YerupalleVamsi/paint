@@ -19,11 +19,11 @@ body{
   align-items: center;
   width: 300px;
 }
-.board{
+.board {
   width: 500px;
   height: 500px;
   display: grid;
-  border: solid black;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 2px solid black;
+  margin: 20px 0;
+  box-sizing: border-box; /* ensures border is included in size */
 }

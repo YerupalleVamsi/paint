@@ -12,16 +12,21 @@
     <div class="cursor"></div>
     <script src="script.js"></script>
 
-    <h1>Etch-A-Sketch</h1>
+    <h1>Sketch</h1>
     <div class="header">
-        <h6>select the size</h6>
-        <button id="popup"class="btn btn-outline-dark">Select</button>
+        <input 
+        type="number"
+        id="sizeInput"
+        placeholder="size of the board"
+        value="16"/>
+        <button class="btn btn-outline-dark" onclick="changesize(Number(document.getElementById('sizeInput').value))">Set size</button>
+
     </div>
     <div class="board"></div>
     <div class="footer">
-        <button class="btn btn-outline-dark">Black</button>
-        <button class="btn btn-outline-dark">Rainbow</button>
-        <button class="btn btn-outline-dark">Clear</button>
+        <button class="btn btn-outline-dark" onclick="changecolor('black')">Black</button>
+        <button class="btn btn-outline-dark"onclick="changecolor('rainbow')">Rainbow</button>
+        <button class="btn btn-outline-dark"onclick="changecolor('white')">Clear</button>
     </div>
 </body>
-</hmtl>
+</html>
