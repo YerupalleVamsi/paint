@@ -1,0 +1,29 @@
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:500px;
+  justify-content: space-between;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.board{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
